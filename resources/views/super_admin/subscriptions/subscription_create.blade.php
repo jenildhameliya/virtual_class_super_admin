@@ -8,15 +8,14 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Subscriptions Create</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
+            <ol class="breadcrumb pl-0">
               <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
-              <li class="breadcrumb-item active">Subscriptions</li>
+              <li class="breadcrumb-item active"><a href="{{ route('subscription') }}">View Plans</a></li>
               <li class="breadcrumb-item active">Add Plans</li>
             </ol>
-          </div>
+            <h1>Subscriptions Create</h1>
+          </div><!-- /.col -->
+          
         </div>
       </div>
     </div>

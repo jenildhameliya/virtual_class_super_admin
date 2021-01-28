@@ -8,47 +8,36 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Create Admin</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
+          <ol class="breadcrumb pl-0">
               <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
-              <li class="breadcrumb-item active">Admin</li>
+              <li class="breadcrumb-item active"><a href="{{ route('admin') }}">Admin Detail</a></li>
               <li class="breadcrumb-item active">Create Admin</li>
             </ol>
-          </div>
+            <h1>Create Admin</h1>
+          </div><!-- /.col -->
         </div>
       </div>
+      
       <section class="content">
       <div class="container-fluid">
         <div class="row">
           <!-- left column -->
-          <div class="col-md-12">
+          <div class="col-md-6">
               <!-- form start -->
               <form id="adminForm" method="post">
                 <div class="card-body">
                   <div class="form-group">
-                    <label>Enter Name</label>
+                    <label>Enter Name <span style="color: red">*</span></label>
                     <input type="text" name="name" class="form-control" placeholder="Enter Name">
                   </div> 
 
                   <div class="form-group">
-                    <label>Enter School Name</label>
-                    <input type="text" name="schoolname" class="form-control" placeholder="Enter School Name">
-                  </div>
-
-                  <div class="form-group">
-                    <label>Enter Email</label>
+                    <label>Enter Email <span style="color: red">*</span></label>
                     <input type="email" name="email" class="form-control" placeholder="Enter Email">
                   </div>
 
                   <div class="form-group">
-                    <label>Enter Password</label>
-                    <input type="password" name="password" class="form-control" placeholder="Enter Password">
-                  </div>
-
-                  <div class="form-group">
-                    <label>Enter Image</label>
+                    <label>Enter Image <span style="color: red">*</span></label>
                     <input type="file" name="image" class="form-control" placeholder="Enter Password">
                   </div>
 
@@ -59,9 +48,24 @@
                     </div>
                   </div>
                 </div>
+            </div>
+
+            <div class="card-body">
+                  <div class="form-group">
+                    <label>Enter School Name <span style="color: red">*</span></label>
+                    <input type="text" name="schoolname" class="form-control" placeholder="Enter School Name">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Enter Password <span style="color: red">*</span></label>
+                    <input type="password" name="password" class="form-control" placeholder="Enter Password">
+                  </div>
+                </div>
+                </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
+                  <a href="{{ route('admin') }}" class="btn btn-danger">Cancel</a>
                 </div>
               </form>
             </div>

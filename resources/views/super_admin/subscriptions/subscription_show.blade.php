@@ -8,13 +8,15 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Subscriptions</h1>
+          <ol class="breadcrumb pl-0">
+              <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
+              <li class="breadcrumb-item active">View Plans</li>
+            </ol>
+            <h1>Subscriptions</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
-              <li class="breadcrumb-item active">Subscriptions</li>
-              <li class="breadcrumb-item active">View Plans</li>
+            <a href="{{ route('subscriptioncreate') }}"><i class="fa fa-plus-circle"style="font-size:40px;color:grey;" aria-hidden="true" title="Add Subscription"></i></a>
             </ol>
           </div>
         </div>

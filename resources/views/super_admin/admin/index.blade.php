@@ -8,13 +8,15 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Admin Detail</h1>
+            <ol class="breadcrumb pl-0">
+              <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
+              <li class="breadcrumb-item active">Admin Detail</li>
+            </ol>
+            <h1>Admin Detail</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
-              <li class="breadcrumb-item active">Admin</li>
-              <li class="breadcrumb-item active">Admin Detail</li>
+            <a href="{{ route('admincreate') }}"><i class="fa fa-plus-circle"style="font-size:40px;color:grey;" aria-hidden="true" title="Add Admin"></i></a>
             </ol>
           </div>
         </div>

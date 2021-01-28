@@ -33,84 +33,23 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-male"></i>
+            <a href="{{ route('admin') }}" class="nav-link">
+              <i class="fa fa-users nav-icon"></i>
               <p>
-                Admin
-                <i class="fas fa-angle-left right"></i>
+                Admin Detail
                 <!-- <span class="badge badge-info right">6</span> -->
               </p>
             </a>
-            
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('admincreate') }}" class="nav-link">
-                  <i class="fa fa-user-plus nav-icon"></i>
-                  <p>Create Admin</p>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="{{ route('admin') }}" class="nav-link">
-                  <i class="fa fa-users nav-icon nav-icon"></i>
-                  <p>Admin Details</p>
-                </a>
-              </li>
-            </ul>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-user-circle nav-icon"></i>
-              <p>
-                Users
-                <i class="fas fa-angle-left right"></i>
-                <!-- <span class="badge badge-info right">6</span> -->
-              </p>
-            </a>
-            
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('teachershow') }}" class="nav-link">
-                  <i class="fa fa-user nav-icon"></i>
-                  <p>Teacher</p>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="{{ route('studentshow') }}" class="nav-link">
-                  <i class="fa fa-graduation-cap nav-icon"></i>
-                  <p>Student</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('subscription') }}" class="nav-link">
               <i class="fa fa-paper-plane nav-icon"></i>
               <p>
                 Subscriptions
-                <i class="fas fa-angle-left right"></i>
                 <!-- <span class="badge badge-info right">6</span> -->
               </p>
             </a>
-            
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('subscriptioncreate') }}" class="nav-link">
-                  <i class="fa fa-plus-circle nav-icon"></i>
-                  <p>Add Plans</p>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="{{ route('subscription') }}" class="nav-link">
-                  <i class="fa fa-eye nav-icon"></i>
-                  <p>View Plans</p>
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </nav>
