@@ -16,7 +16,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <a href="{{ route('subscriptioncreate') }}"><i class="fa fa-plus-circle"style="font-size:40px;color:grey;" aria-hidden="true" title="Add Subscription"></i></a>
+            <a href="{{ route('subscriptioncreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Subscription</a>
             </ol>
           </div>
         </div>

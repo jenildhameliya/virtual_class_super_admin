@@ -16,7 +16,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-            <a href="{{ route('admincreate') }}"><i class="fa fa-plus-circle"style="font-size:40px;color:grey;" aria-hidden="true" title="Add Admin"></i></a>
+            <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
             </ol>
           </div>
         </div>
@@ -48,6 +48,7 @@
                       <th>Email</th>
                       <th>Image</th>
                       <th>Action</th>
+                      <th>Login</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -57,6 +58,10 @@
                       <td>Abc</td>
                       <td>Abc@gmail.com</td>
                       <td>Abc.jpg</td>
+                      <td>
+                        <a href="#" class="btn btn-success">Edit</a>
+                        <a href="#" class="btn btn-danger">Delete</a>
+                      </td>
                       <td><button class="btn btn-success">Login</button></td>
                     </tr>
                   </tbody>
