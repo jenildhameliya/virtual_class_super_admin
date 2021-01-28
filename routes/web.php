@@ -29,3 +29,6 @@ Route::get('/teachershow', 'teacherController@index')->name('teachershow');
 //Subscription
 Route::get('/subscription', 'subscriptionController@index')->name('subscription');
 Route::get('/subscriptioncreate', 'subscriptionController@create')->name('subscriptioncreate');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
