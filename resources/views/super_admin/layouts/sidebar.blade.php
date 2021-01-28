@@ -71,14 +71,14 @@
             
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('teachershow') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Teacher</p>
                 </a>
               </li>
               
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('studentshow') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Student</p>
                 </a>
@@ -98,7 +98,7 @@
             
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('subscriptioncreate') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Plans</p>
                 </a>

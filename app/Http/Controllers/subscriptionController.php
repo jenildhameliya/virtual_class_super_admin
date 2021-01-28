@@ -10,4 +10,9 @@ class subscriptionController extends Controller
     {
     	return view('super_admin.subscriptions.subscription_show');
     }
+
+    public function create()
+    {
+        return view('super_admin.subscriptions.subscription_create');
+    }
 }

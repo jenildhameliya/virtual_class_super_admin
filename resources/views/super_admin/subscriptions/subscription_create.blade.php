@@ -14,7 +14,7 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
               <li class="breadcrumb-item active">Subscriptions</li>
-              <li class="breadcrumb-item active">View Plans</li>
+              <li class="breadcrumb-item active">Add Plans</li>
             </ol>
           </div>
         </div>
