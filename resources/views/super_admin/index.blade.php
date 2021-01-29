@@ -12,7 +12,6 @@
               <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
-            <h1>Dashboard</h1>
           </div>
           
         </div><!-- /.row -->
@@ -27,7 +26,7 @@
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <a href="#" class="small-box">
+            <a href="{{ route('admin') }}" class="small-box">
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>0</h3>
@@ -38,41 +37,10 @@
               </div></a>
             </div>
           </div>
-          <!-- ./col -->
           
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <a href="#" class="small-box">
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>0</h3>
-                <p>School</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <a href="#" class="small-box">
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>0</h3>
-                <p>Plan</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <a href="#" class="small-box">
+            <a href="{{ route('subscription') }}" class="small-box">
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3>0</h3>

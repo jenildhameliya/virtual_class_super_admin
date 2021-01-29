@@ -14,6 +14,7 @@
             </ol>
             <h1>Admin Detail</h1>
           </div><!-- /.col -->
+          
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
             <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
@@ -24,19 +25,6 @@
       <!-- student show table start -->
       <div class="row">
           <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
                 <table class="table table-hover text-nowrap">
@@ -59,7 +47,7 @@
                       <td>Abc@gmail.com</td>
                       <td>Abc.jpg</td>
                       <td>
-                        <a href="#" class="btn btn-success">Edit</a>
+                        <a href="{{ route('adminedit') }}" class="btn btn-success">Edit</a>
                         <a href="#" class="btn btn-danger">Delete</a>
                       </td>
                       <td><button class="btn btn-success">Login</button></td>

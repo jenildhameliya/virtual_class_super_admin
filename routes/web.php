@@ -21,6 +21,7 @@ Route::get('/index', 'IndexController@index')->name('index');
 //Admin
 Route::get('/admincreate', 'adminController@insert')->name('admincreate');
 Route::get('/aindex', 'adminController@index')->name('admin');
+Route::get('/adminedit', 'adminController@edit')->name('adminedit');
 
 //Subscription
 Route::get('/subscription', 'subscriptionController@index')->name('subscription');
