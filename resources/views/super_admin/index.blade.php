@@ -30,7 +30,7 @@
             <a href="#" class="small-box">
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3>0</h3>
                 <p>Admin</p>
               </div>
               <div class="icon">
@@ -45,7 +45,7 @@
             <a href="#" class="small-box">
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>150</h3>
+                <h3>0</h3>
                 <p>School</p>
               </div>
               <div class="icon">
@@ -60,7 +60,7 @@
             <a href="#" class="small-box">
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>5</h3>
+                <h3>0</h3>
                 <p>Plan</p>
               </div>
               <div class="icon">
@@ -75,7 +75,7 @@
             <a href="#" class="small-box">
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>150</h3>
+                <h3>0</h3>
                 <p>Subscriptions</p>
               </div>
               <div class="icon">
