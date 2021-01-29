@@ -13,11 +13,23 @@
               <li class="breadcrumb-item active"><a href="{{ route('subscription') }}">View Plans</a></li>
               <li class="breadcrumb-item active">Add Plans</li>
             </ol>
-            <h1>Subscriptions Create</h1>
-          </div><!-- /.col -->
-          
+          </div>
         </div>
       </div>
     </div>
-  </div>
+     <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Subscriptions Create</h1>
+                </div><!-- /.col -->
+                  <div class="col-sm-6">
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+          <div><hr style="border-bottom: 3px solid black;"></div>
+        </div>
+      </div>
+    </div>
+
   @include('super_admin.layouts.footer')

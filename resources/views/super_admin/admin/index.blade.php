@@ -12,16 +12,29 @@
               <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
               <li class="breadcrumb-item active">Admin Detail</li>
             </ol>
-            <h1>Admin Detail</h1>
           </div><!-- /.col -->
           
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-            <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
-            </ol>
-          </div>
+      </div>
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Admin Detail</h1>
+                </div><!-- /.col -->
+                  <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                    <ol class="breadcrumb float-sm-right">
+                    <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
+                    </ol>
+                  </ol>
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+          <div><hr style="border-bottom: 3px solid black;"></div>
         </div>
       </div>
+
+      
       <!-- student show table start -->
       <div class="row">
           <div class="col-12">

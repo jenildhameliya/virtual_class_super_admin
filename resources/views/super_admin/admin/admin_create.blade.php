@@ -13,11 +13,19 @@
               <li class="breadcrumb-item active"><a href="{{ route('admin') }}">Admin Detail</a></li>
               <li class="breadcrumb-item active">Create Admin</li>
             </ol>
-            <h1>Create Admin</h1>
           </div><!-- /.col -->
         </div>
       </div>
-      
+      <div class="content-header">
+        <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Create Admin</h1>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <div><hr style="border-bottom: 3px solid black;"></div>
+      </div>
+    </div>
       <section class="content">
       <div class="container-fluid">
         <div class="row">

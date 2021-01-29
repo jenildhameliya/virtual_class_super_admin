@@ -37,7 +37,6 @@
               <i class="fa fa-users nav-icon"></i>
               <p>
                 Admin Detail
-                <!-- <span class="badge badge-info right">6</span> -->
               </p>
             </a>
           </li>
@@ -47,7 +46,15 @@
               <i class="fa fa-paper-plane nav-icon"></i>
               <p>
                 Subscriptions
-                <!-- <span class="badge badge-info right">6</span> -->
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ url('/') }}" class="nav-link">
+            <i class="fa fa-sign-out nav-icon" aria-hidden="true"></i>
+              <p>
+                Logout
               </p>
             </a>
           </li>
