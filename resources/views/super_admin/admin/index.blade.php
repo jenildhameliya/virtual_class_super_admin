@@ -9,7 +9,7 @@
         <div class="row mb-2">
           <div class="col">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('index') }}"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
               <li class="breadcrumb-item active">Admin Detail</li>
             </ol>
           </div><!-- /.col -->
