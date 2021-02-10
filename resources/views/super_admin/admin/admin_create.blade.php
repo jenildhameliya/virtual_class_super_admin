@@ -35,37 +35,39 @@
               <form id="adminForm" method="post">
                 <div class="card-body">
                   <div class="form-group">
-                    <label>Enter Name <span style="color: red">*</span></label>
-                    <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                    <label>Plan <span style="color: red">*</span></label>
+                    <select name="plan_id" id="plan_id" class="form-control" placeholder="Select Plan">
+                      <option value="0">Select Plan</option>
+                    </select>
+                    <!-- <input type="text" name="name" class="form-control" placeholder="Enter Name"> -->
                   </div> 
 
                   <div class="form-group">
-                    <label>Enter Email <span style="color: red">*</span></label>
-                    <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                    <label>School Type <span style="color: red">*</span></label>
+                    <select name="school_type" id="school_type" class="form-control" placeholder="Select School Type">
+                      <option value="0">Select School Type</option>
+                    </select>
+                    <!-- <input type="email" name="email" class="form-control" placeholder="Enter Email"> -->
                   </div>
 
                   <div class="form-group">
-                    <label>Enter Image <span style="color: red">*</span></label>
-                    <input type="file" name="image" class="form-control" placeholder="Enter Password">
-                  </div>
-
-                  <div class="form-group mb-0">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
-                      <label class="custom-control-label" for="exampleCheck1">I agree to the <a href="#">terms of service</a>.</label>
-                    </div>
+                    <label>User <span style="color: red">*</span></label>
+                    <select name="user_id" id="user_id" class="form-control" placeholder="Select User">
+                      <option value="0">Select User</option>
+                    </select>
+                    <!-- <input type="file" name="image" class="form-control" placeholder="Enter Password"> -->
                   </div>
                 </div>
             </div>
 
             <div class="card-body">
                   <div class="form-group">
-                    <label>Enter School Name <span style="color: red">*</span></label>
+                    <label>School Name <span style="color: red">*</span></label>
                     <input type="text" name="schoolname" class="form-control" placeholder="Enter School Name">
                   </div>
 
                   <div class="form-group">
-                    <label>Enter Password <span style="color: red">*</span></label>
+                    <label>School Address <span style="color: red">*</span></label>
                     <input type="password" name="password" class="form-control" placeholder="Enter Password">
                   </div>
                 </div>

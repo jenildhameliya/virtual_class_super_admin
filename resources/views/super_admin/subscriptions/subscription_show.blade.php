@@ -32,6 +32,47 @@
           <div><hr style="border-bottom: 3px solid black;"></div>
         </div>
       </div>
+      <!-- student show table start -->
+      <div class="row">
+          <div class="col-12">
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Detail</th>
+                      <th>Duration</th>
+                      <th>Limitations Of Students</th>
+                      <th>Limitations Of Faculties</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Type</td>
+                      <td>Amount</td>
+                      <td>Detail</td>
+                      <td>Duration</td>
+                      <td>Limitations Of Students</td>
+                      <td>Limitations Of Faculties</td>
+                      <td>
+                        <a href="{{ route('adminedit') }}" class="btn btn-success">Edit</a>
+                        <a href="#" class="btn btn-danger">Delete</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
     </div>
+    <!-- student show table end -->
   </div>
   @include('super_admin.layouts.footer')

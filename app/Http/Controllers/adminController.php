@@ -16,6 +16,11 @@ class adminController extends Controller
     	return view('super_admin.admin.admin_create');
     }
 
+    public function user_create()
+    {
+    	return view('super_admin.admin.user_create');
+    }
+
     public function edit()
     {
         return view('super_Admin.admin.admin_edit');

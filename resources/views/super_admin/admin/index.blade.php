@@ -24,7 +24,11 @@
                   <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                     <ol class="breadcrumb float-sm-right">
-                    <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
+                    <div class="pull-right">
+                      <a href="{{ route('user_create') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add User</a>
+
+                      <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
+                    </div>
                     </ol>
                   </ol>
                 </div><!-- /.col -->

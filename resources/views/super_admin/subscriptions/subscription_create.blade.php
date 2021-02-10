@@ -29,6 +29,73 @@
             </div><!-- /.container-fluid -->
           <div><hr style="border-bottom: 3px solid black;"></div>
         </div>
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- left column -->
+              <div class="col-md-6">
+                  <!-- form start -->
+                  <form id="adminForm" method="post">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label>Plan Type <span style="color: red">*</span></label>
+                        <!-- <select name="plan_id" id="plan_id" class="form-control" placeholder="Select Plan">
+                          <option value="0">Select Plan</option>
+                        </select> -->
+                        <input type="text" name="plan_type" class="form-control" placeholder="Enter Plan Type">
+                      </div> 
+
+                      <div class="form-group">
+                        <label>Plan Details <span style="color: red">*</span></label>
+                        <!-- <select name="school_type" id="school_type" class="form-control" placeholder="Select School Type">
+                          <option value="0">Select School Type</option>
+                        </select> -->
+                        <input type="text" name="plan_detail" class="form-control" placeholder="Enter Plan Details">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Limitations Of Students <span style="color: red">*</span></label>
+                        <input type="text" name="limitation_of_students" class="form-control" placeholder="Enter Limitation Of Students">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                      <div class="form-group">
+                        <label>Plan Amount <span style="color: red">*</span></label>
+                        <input type="text" name="plan_amount" class="form-control" placeholder="Enter Plan Amount">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Duration <span style="color: red">*</span></label>
+                        <input type="text" name="duration" class="form-control" placeholder="Enter Plan Duration">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Limitations Of Faculties <span style="color: red">*</span></label>
+                        <input type="text" name="limitation_of_faculties" class="form-control" placeholder="Enter Limitation Of Faculties">
+                      </div>
+                    </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <a href="{{ route('subscription') }}" class="btn btn-danger">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card -->
+                </div>
+              <!--/.col (left) -->
+              <!-- right column -->
+              <div class="col-md-6">
+
+              </div>
+              <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+          </div><!-- /.container-fluid -->
+        </section>
       </div>
     </div>
 
