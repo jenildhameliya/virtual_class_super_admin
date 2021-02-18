@@ -60,7 +60,7 @@
                       <td>Limitations Of Students</td>
                       <td>Limitations Of Faculties</td>
                       <td>
-                        <a href="{{ route('adminedit') }}" class="btn btn-success">Edit</a>
+                        <a href="{{ route('subscriptionedit') }}" class="btn btn-success">Edit</a>
                         <a href="#" class="btn btn-danger">Delete</a>
                       </td>
                     </tr>

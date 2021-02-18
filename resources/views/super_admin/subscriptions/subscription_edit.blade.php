@@ -11,7 +11,7 @@
             <ol class="breadcrumb pl-0">
               <li class="breadcrumb-item"><a href="{{ route('index') }}"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
               <li class="breadcrumb-item active"><a href="{{ route('subscription') }}">View Plans</a></li>
-              <li class="breadcrumb-item active">Add Plans</li>
+              <li class="breadcrumb-item active">Edit Plans</li>
             </ol>
           </div>
         </div>
@@ -21,7 +21,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Subscriptions Create</h1>
+              <h1 class="m-0">Subscriptions Edit</h1>
                 </div><!-- /.col -->
                   <div class="col-sm-6">
                 </div><!-- /.col -->
@@ -35,7 +35,7 @@
               <!-- left column -->
               <div class="col-md-6">
                   <!-- form start -->
-                  <form id="adminForm" action="{{ route('subscription_submit') }}"  method="post">
+                  <form id="adminForm" method="post">
                   @csrf
                     <div class="card-body">
                       <div class="form-group">

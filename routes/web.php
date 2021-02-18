@@ -36,5 +36,6 @@ Route::group(['prefix' => 'super_admin'], function () {
     Route::get('/subscription', 'subscriptionController@index')->name('subscription');
     Route::get('/subscriptioncreate', 'subscriptionController@create')->name('subscriptioncreate');
     Route::post('/subscription_submit', 'subscriptionController@subscription_submit')->name('subscription_submit');
+    Route::get('/subscriptionedit', 'subscriptionController@edit')->name('subscriptionedit');
     // });
 });

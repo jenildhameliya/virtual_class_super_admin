@@ -16,8 +16,13 @@ class subscriptionController extends Controller
         return view('super_admin.subscriptions.subscription_create');
     }
 
+    public function edit()
+    {
+        return view('super_admin.subscriptions.subscription_edit');
+    }
+
     public function subscription_submit()
     {
-        echo "hello";
+        return view('super_admin.subscriptions.subscription_show');
     }
 }
