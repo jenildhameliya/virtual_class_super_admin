@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStateTable extends Migration
+class CreateSubjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateStateTable extends Migration
      */
     public function up()
     {
-        Schema::create('state', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('state');
-            $table->unsignedbigInteger('country_id');
-            $table->foreign('country_id')->references('id')->on('country');
+        Schema::create('subjects', function (Blueprint $table) {
+            $table->bigIncrements('sub_id');
+            $table->string('sub_name');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateStateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('state');
+        Schema::dropIfExists('subjects');
     }
 }

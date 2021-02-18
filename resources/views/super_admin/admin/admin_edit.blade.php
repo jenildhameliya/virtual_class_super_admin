@@ -34,6 +34,7 @@
           <div class="col-md-6">
               <!-- form start -->
               <form id="adminForm" method="post">
+              @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label>Enter Name <span style="color: red">*</span></label>

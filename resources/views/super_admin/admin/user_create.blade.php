@@ -33,12 +33,16 @@
           <div class="col-md-6">
               <!-- form start -->
               
-              <form id="adminForm" method="post">
+              <form id="adminForm" action="{{ route('user_insert') }}" method="post">
+              @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label>Select Role <span style="color: red">*</span></label>
                     <select name="role" id="role" class="form-control">
                       <option value="0">Select Role</option>
+                      <?php foreach($role as $rol) { ?>
+                        <option value="<?php echo $rol->id; ?>"><?php echo $rol->name ?></option>
+                      <?php } ?>
                     </select>
                     <!-- <input type="text" name="admissionno" class="form-control" placeholder="Enter Admission No."> -->
                   </div> 
@@ -67,6 +71,9 @@
                     <label>State <span style="color: red">*</span></label>
                     <select name="state" id="state" class="form-control">
                       <option value="0">Select State</option>
+                      <?php foreach($state as $stat) { ?>
+                        <option value="<?php echo $stat->id; ?>"><?php echo $stat->state ?></option>
+                      <?php } ?>
                     </select>
                     <!-- <input type="text" name="state" class="form-control" placeholder="Select State"> -->
                   </div>
@@ -133,6 +140,9 @@
                     <label>City <span style="color: red">*</span></label>
                     <select name="city" id="city" class="form-control">
                       <option value="0">Select City</option>
+                      <?php foreach($city as $ct) { ?>
+                        <option value="<?php echo $ct->id; ?>"><?php echo $ct->city ?></option>
+                      <?php } ?>
                     </select>
                     <!-- <input type="text" name="city" class="form-control" placeholder="Select City"> -->
                   </div>
@@ -141,6 +151,9 @@
                     <label>Country <span style="color: red">*</span></label>
                     <select name="country" id="country" class="form-control">
                       <option value="0">Select Country</option>
+                      <?php foreach($country as $coun) { ?>
+                        <option value="<?php echo $coun->id; ?>"><?php echo $coun->country_name ?></option>
+                      <?php } ?>
                     </select>
                     <!-- <input type="text" name="country" class="form-control" placeholder="Select Country"> -->
                   </div>
@@ -164,7 +177,7 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" name="save" class="btn btn-primary">Submit</button>
                   <a href="{{ route('admin') }}" class="btn btn-danger">Cancel</a>
                 </div>
               </form>

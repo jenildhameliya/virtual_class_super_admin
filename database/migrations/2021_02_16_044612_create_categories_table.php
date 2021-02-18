@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubjectTable extends Migration
+class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateSubjectTable extends Migration
      */
     public function up()
     {
-        Schema::create('subject', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('sub_name');
+        Schema::create('categories', function (Blueprint $table) {
+            $table->bigIncrements('category_id');
+            $table->string('category');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateSubjectTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subject');
+        Schema::dropIfExists('categories');
     }
 }

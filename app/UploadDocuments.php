@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class State extends Model
+class UploadDocuments extends Model
 {
     protected $fillable = [
-        'state', 'country_id',
+        'lecture_id', 'doc_name',
     ];
 }

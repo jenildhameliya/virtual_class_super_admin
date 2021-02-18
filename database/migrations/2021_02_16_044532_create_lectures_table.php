@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLectureTable extends Migration
+class CreateLecturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateLectureTable extends Migration
      */
     public function up()
     {
-        Schema::create('lecture', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('lectures', function (Blueprint $table) {
+            $table->bigIncrements('lecture_id');
             $table->unsignedbigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('user');
+            $table->foreign('user_id')->references('usertable_id')->on('usertabels');
             $table->unsignedbigInteger('class_id');
-            $table->foreign('class_id')->references('id')->on('class');
+            $table->foreign('class_id')->references('classes_id')->on('classes');
             $table->unsignedbigInteger('subject_id');
-            $table->foreign('subject_id')->references('id')->on('subject');
+            $table->foreign('subject_id')->references('sub_id')->on('subjects');
             $table->string('description');
             $table->date('date');
             $table->time('start_time');
@@ -36,6 +36,6 @@ class CreateLectureTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lecture');
+        Schema::dropIfExists('lectures');
     }
 }

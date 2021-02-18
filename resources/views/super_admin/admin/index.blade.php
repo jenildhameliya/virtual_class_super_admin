@@ -27,7 +27,7 @@
                     <div class="pull-right">
                       <a href="{{ route('user_create') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add User</a>
 
-                      <a href="{{ route('admincreate') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
+                      <a href="{{ route('admin_create') }}" class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Admin</a>
                     </div>
                     </ol>
                   </ol>

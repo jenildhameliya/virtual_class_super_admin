@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateClassTable extends Migration
+class CreateUploadDocumentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateClassTable extends Migration
      */
     public function up()
     {
-        Schema::create('class', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('class_name');
+        Schema::create('upload_documents', function (Blueprint $table) {
+            $table->bigIncrements('doc_id');
+            $table->unsignedbigInteger('lecture_id');
+            $table->foreign('lecture_id')->references('lecture_id')->on('lectures');
+            $table->string('doc_name');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateClassTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('class');
+        Schema::dropIfExists('upload_documents');
     }
 }

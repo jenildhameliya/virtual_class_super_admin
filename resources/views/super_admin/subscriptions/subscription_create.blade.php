@@ -35,7 +35,8 @@
               <!-- left column -->
               <div class="col-md-6">
                   <!-- form start -->
-                  <form id="adminForm" method="post">
+                  <form id="adminForm" action="route{{ route('subscription_submit') }}" method="post">
+                  @csrf
                     <div class="card-body">
                       <div class="form-group">
                         <label>Plan Type <span style="color: red">*</span></label>

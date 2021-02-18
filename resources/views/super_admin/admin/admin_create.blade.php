@@ -32,7 +32,8 @@
           <!-- left column -->
           <div class="col-md-6">
               <!-- form start -->
-              <form id="adminForm" method="post">
+              <form id="adminForm" method="post" action="{{ route('admin_insert') }}">
+              @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label>Plan <span style="color: red">*</span></label>
@@ -74,7 +75,8 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="submit" name="submit" class="btn btn-primary" value="submit">
+                  <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                   <a href="{{ route('admin') }}" class="btn btn-danger">Cancel</a>
                 </div>
               </form>
